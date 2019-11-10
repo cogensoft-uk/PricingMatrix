@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Cogensoft\PricingMatrix\Api\CustomerPriceListInterface" type="Cogensoft\PricingMatrix\Model\CustomerPriceListRepository"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\CustomerPriceListInterface" type="Cogensoft\PricingMatrix\Model\CustomerPriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\CustomerPriceListUpdateInterface" type="Cogensoft\PricingMatrix\Model\CustomerPriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\PriceListInterface" type="Cogensoft\PricingMatrix\Model\PriceListRepository"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\PriceListInterface" type="Cogensoft\PricingMatrix\Model\PriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\PriceListUpdateInterface" type="Cogensoft\PricingMatrix\Model\PriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\AdvancedPriceListInterface" type="Cogensoft\PricingMatrix\Model\AdvancedPriceListRepository"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\AdvancedPriceListInterface" type="Cogensoft\PricingMatrix\Model\AdvancedPriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\AdvancedPriceListUpdateInterface" type="Cogensoft\PricingMatrix\Model\AdvancedPriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\DetailPriceListInterface" type="Cogensoft\PricingMatrix\Model\DetailPriceListRepository"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\DetailPriceListInterface" type="Cogensoft\PricingMatrix\Model\DetailPriceList"/>
+	<preference for="Cogensoft\PricingMatrix\Api\Data\DetailPriceListUpdateInterface" type="Cogensoft\PricingMatrix\Model\DetailPriceList"/>
+
+	<!-- Pricing Override -->
+	<type name="Magento\Catalog\Model\Product">
+		<plugin name="erp_price" type="Cogensoft\PricingMatrix\Plugin\Product" sortOrder="1" disabled="false"/>
+	</type>
+</config>

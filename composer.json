@@ -1,0 +1,22 @@
+{
+    "name": "cogensoft/module-pricingmatrix",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "alex.lancaster@cogensoft.co.uk",
+            "name": "Alex Lancaster"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Cogensoft\\PricingMatrix\\": ""
+        }
+    }
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route method="POST" url="/V1/pricingmatrix/customerpricelist">
+		<service class="Cogensoft\PricingMatrix\Api\CustomerPriceListInterface" method="createCustomerPriceList"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/pricingmatrix/customerpricelist/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\CustomerPriceListInterface" method="getCustomerPriceListByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/pricingmatrix/customerpricelist/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\CustomerPriceListInterface" method="updateCustomerPriceListByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/pricingmatrix/customerpricelist/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\CustomerPriceListInterface" method="deleteCustomerPriceListByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/pricingmatrix/pricelist">
+		<service class="Cogensoft\PricingMatrix\Api\PriceListInterface" method="createPriceList"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/pricingmatrix/pricelist/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\PriceListInterface" method="getPriceListByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/pricingmatrix/pricelist/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\PriceListInterface" method="updatePriceListByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/pricingmatrix/pricelist/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\PriceListInterface" method="deletePriceListByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/pricingmatrix/pricelistadvanced">
+		<service class="Cogensoft\PricingMatrix\Api\AdvancedPriceListInterface" method="createPriceListAdvanced"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/pricingmatrix/pricelistadvanced/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\AdvancedPriceListInterface" method="getPriceListAdvancedByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/pricingmatrix/pricelistadvanced/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\AdvancedPriceListInterface" method="updatePriceListAdvancedByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/pricingmatrix/pricelistadvanced/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\AdvancedPriceListInterface" method="deletePriceListAdvancedByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="POST" url="/V1/pricingmatrix/pricelistdetail">
+		<service class="Cogensoft\PricingMatrix\Api\DetailPriceListInterface" method="createPriceListDetail"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="GET" url="/V1/pricingmatrix/pricelistdetail/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\DetailPriceListInterface" method="getPriceListDetailByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="PUT" url="/V1/pricingmatrix/pricelistdetail/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\DetailPriceListInterface" method="updatePriceListDetailByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+	<route method="DELETE" url="/V1/pricingmatrix/pricelistdetail/:primary">
+		<service class="Cogensoft\PricingMatrix\Api\DetailPriceListInterface" method="deletePriceListDetailByPrimary"/>
+		<resources>
+			<resource ref="Cogensoft_PricingMatrix::api_access"/>
+		</resources>
+	</route>
+</routes>
